@@ -1,0 +1,22 @@
+a00636.science.domain
+1
+  0%|          | 0/2 [00:00<?, ?it/s]
+0it [00:00, ?it/s][A0it [00:00, ?it/s]
+  0%|          | 0/2 [01:21<?, ?it/s]
+../data/test.en.mrp
+Traceback (most recent call last):
+  File "parse.py", line 84, in <module>
+    prediction = parse(sentences, model, dataset, args, language, approximate_anchors=False)
+  File "parse.py", line 62, in parse
+    output=parse_mid(input[i*100:(i+1)*100], model, dataset, args, language, **kwargs)
+  File "parse.py", line 45, in parse_mid
+    prediction = model(Batch.to(batch, device), inference=True, **kwargs)[("ucca", language)][0]
+  File "/home/xhd160/perin-parsing/perin_env/lib64/python3.6/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/xhd160/perin-parsing/perin/model/model.py", line 84, in forward
+    output[self.dataset.id_to_framework[i]] = head.predict(*select_inputs(indices), **kwargs)
+  File "/home/xhd160/perin-parsing/perin/model/head/abstract_head.py", line 110, in predict
+    for b in range(batch_size)
+  File "/home/xhd160/perin-parsing/perin/model/head/abstract_head.py", line 110, in <listcomp>
+    for b in range(batch_size)
+TypeError: parse() got an unexpected keyword argument 'approximate_anchors'

@@ -1,0 +1,9 @@
+a00610.science.domain
+2
+Traceback (most recent call last):
+  File "parse.py", line 1, in <module>
+    from data.batch import Batch
+  File "/home/xhd160/perin-parsing/perin/data/batch.py", line 30
+    def _stack(field: str, examples):
+                    ^
+SyntaxError: invalid syntax

@@ -1,0 +1,10 @@
+a00818.science.domain
+1
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+../data/test.en.mrp
+Traceback (most recent call last):
+  File "parse.py", line 84, in <module>
+    prediction = parse(sentences, model, dataset, args, language, approximate_anchors=False)
+  File "parse.py", line 67, in parse
+    output=parse_mid(input[(i+1):], model, dataset, args, language, **kwargs)
+UnboundLocalError: local variable 'i' referenced before assignment

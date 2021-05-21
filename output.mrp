@@ -1,0 +1,1 @@
+{"id": "0", "input": "All you need is love.", "nodes": [{"id": 0, "label": "all"}, {"id": 1, "label": "you"}, {"id": 2, "label": "need-01"}, {"id": 3, "label": "love-01"}], "edges": [{"source": 2, "target": 1, "label": "arg0"}, {"source": 2, "target": 3, "label": "arg1"}, {"source": 0, "target": 2, "label": "domain"}], "tops": [2], "framework": "amr"}

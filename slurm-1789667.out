@@ -1,0 +1,19 @@
+a00756.science.domain
+3
+../data/commoncrawl.de-en.split3.en.mrp
+Traceback (most recent call last):
+  File "parse.py", line 68, in <module>
+    prediction = parse(sentences, model, dataset, args, language, approximate_anchors=False)
+  File "parse.py", line 36, in parse
+    batches = dataset.load_sentences(input, args, "amr", language)
+  File "/home/xhd160/perin-parsing/perin/data/shared_dataset.py", line 43, in load_sentences
+    for (f, l), dataset in self.child_datasets.items()
+  File "/home/xhd160/perin-parsing/perin/data/shared_dataset.py", line 43, in <listcomp>
+    for (f, l), dataset in self.child_datasets.items()
+  File "/home/xhd160/perin-parsing/perin/data/dataset.py", line 101, in load_sentences
+    "id": ("id", self.id_field),
+  File "/home/xhd160/perin-parsing/perin/data/parser/from_mrp/request_parser.py", line 23, in __init__
+    utils.create_token_anchors(example)
+  File "/home/xhd160/perin-parsing/perin/utility/parser_utils.py", line 172, in create_token_anchors
+    raise Exception(f"sentence {sentence['id']} not matching companion after anchor computation.")
+Exception: sentence 1121 not matching companion after anchor computation.

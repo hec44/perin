@@ -1,0 +1,8 @@
+a00818.science.domain
+1
+Traceback (most recent call last):
+  File "parse.py", line 30, in <module>
+    line = fp.readline()
+  File "/usr/lib64/python3.6/encodings/ascii.py", line 26, in decode
+    return codecs.ascii_decode(input, self.errors)[0]
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 33: ordinal not in range(128)

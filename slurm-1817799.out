@@ -1,0 +1,6 @@
+a00756.science.domain
+3
+  File "parse.py", line 58
+    for i in tqdm(range(int(input/1000)):
+                                        ^
+SyntaxError: invalid syntax
